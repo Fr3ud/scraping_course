@@ -16,9 +16,9 @@ def write_csv(data):
     with open('plugins.csv', 'a') as f:
         writer = csv.writer(f)
 
-        writer.writerow((data['name'],
+        writer.writerow( (data['name'],
                         data['url'],
-                        data['reviews']))
+                        data['reviews']) )
 
 def get_data(html):
     soup = BeautifulSoup(html, 'lxml')
